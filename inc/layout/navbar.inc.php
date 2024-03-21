@@ -5,7 +5,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
       <li class="nav-item <?=echoActiveClassIfRequestMatches("display-records");?>">
         <a class="nav-link" href="display-records.php">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -13,6 +13,7 @@
         <a class="nav-link" href="create-record.php">Create Record</a>
       </li>
     </ul>
+    <h1 class="mx-auto text-white">Records Manager</h1>
     <form action="search-records.php" method="POST" class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
